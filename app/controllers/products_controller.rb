@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
-  def product_data
+  def data
     product = Product.find(params[:id])
     redner json: ProductSerializer.serialize(product)
   end
