@@ -11,7 +11,7 @@ $(function () {
     var nextId = parseInt($(".js-next").attr("data-id")) + 1;
     $.getJSON("/products/" + nextId + "/product_data", function(data) {
       $(".productName").text(data["name"]);
-      $(".productPrice").text(data["title"]);
+      $(".productPrice").text(data["price"]);
       $(".postBody").text(data["description"]);
       // re-set the id to current on the link
       $(".js-next").attr("data-id", data["id"]);
