@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
   def data
     product = Product.find(params[:id])
-    redner json: ProductSerializer.serialize(product)
+    render json: ProductSerializer.serialize(product)
   end
 
 
