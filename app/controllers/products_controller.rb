@@ -22,6 +22,11 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
+  def product_dat
+    product = Product.find(params[:id])
+  end
+
+
   private
 
   def product_params
