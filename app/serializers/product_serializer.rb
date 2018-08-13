@@ -5,7 +5,7 @@ class ProductSerializer
     # name, price, inventory and description
     serialized_product = '{'
     serialized_product += '"name": ' + product.name + ', '
-    serialized_product += '"price": ' + product.price + ', '
+    serialized_product += '"price": ' + product.price.to_s + ', '
     serialized_product += '}'
 
   end
